@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0f1c27426f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/newstyle.css" />
+   
+    <title>ChallengeSheCodesReact</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="city-form">
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            autofocus="on"
+            class="city-text" id="city-input"
+          />
+          <i class="fas fa-search" id="search-button"></i>
+        <i class="fas fa-map-marker-alt" id="location-button"></i>
+        </form>
+      </header>
+      <section>
+        <h1 class="city" id="current-city"></h1>
+        <p class="paragraph-time" >
+          <span id ="current-date"></span>
+          <br />
+          <span id="weather-description"></span>
+        </p>
+        
+      </section>
+      <ul>
+        <li >Humidity: <span id="humidity"></span>%</li>
+        <li >Wind: <span id="wind-speed"></span>km/h</li>
+      </ul>
+      <h1 class="temperature"><span id="temperature"></span> <span class="unit"><a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link">F</a> </span></h1>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card" >
+            <div class="card-body">
+              <h4 class="hour">6pm</h4>
+              <h5 class="card-title">
+                Fri<br /><i class="fas fa-cloud-sun"></i>
+              </h5>
+              <p class="card-temperature">19° | 9°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h4>9pm</h4>
+              <h5 class="card-title">
+                Sat<br /><i class="fas fa-cloud-rain"></i>
+              </h5>
+              <p class="card-temperature">18°| 9°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h4>12am</h4>
+              <h5 class="card-title">
+                Sun<br /><i class="fas fa-cloud-rain"></i>
+              </h5>
+              <p class="card-temperature">15°| 8°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h4>3am</h4>
+              <h5 class="card-title">
+                Mon<br /><i class="fas fa-cloud-sun"></i>
+              </h5>
+              <p class="card-temperature">14° | 7°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" >
+            <div class="card-body">
+              <h4>6am</h4>
+              <h5 class="card-title">
+                Tue<br /><i class="fas fa-cloud-rain"></i>
+              </h5>
+              <p class="card-temperature">12° | 4°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" >
+            <div class="card-body">
+              <h4>9am</h4>
+              <h5 class="card-title">
+                Wed<br /><i class="fas fa-cloud-sun"></i>
+              </h5>
+              <p class="card-temperature">11° | 1°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" >
+            <div class="card-body">
+              <h4>12pm</h4>
+              <h5 class="card-title">Thu<br /><i class="fas fa-sun"></i></h5>
+              <p class="card-temperature">13° | 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" >
+            <div class="card-body">
+              <h4>3pm</h4>
+              <h5 class="card-title">
+                Fri<br /><i class="fas fa-cloud-sun"></i>
+              </h5>
+              <p class="card-temperature">14° | 4°</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer">This page was coded by Victoria Jones</p>
+     <script src =src/java.js></script>
+  </body>
+</html>

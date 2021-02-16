@@ -1,0 +1,121 @@
+img {
+  margin: -5px -6px;
+  position: relative;
+  left: 370px;
+  bottom: 120px;
+  border-radius: 40% 60% / 90% 40%;
+  font-size: 50px;
+}
+ul {
+  list-style-type: none;
+  position: relative;
+  left: -5px;
+  font-size: 20px;
+}
+body {
+  color: #084298;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+h4 {
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 20px;
+}
+h4,
+h5,
+.btn-search {
+  font-weight: 900;
+}
+.city,
+.temperature,
+.city-text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.container {
+  margin: 20px auto;
+  max-width: 600px;
+  margin-bottom: 5px;
+  padding: 15px auto;
+  border-radius: 10px;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+.city-text {
+  margin-left: 30px;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.fa-search {
+  font-size: 27px;
+  color: #9f74f0;
+  margin-left: 10px;
+}
+.fa-search:hover {
+  cursor: pointer;
+}
+#location-button {
+  margin-left: 10px;
+  font-size: 27px;
+  color: #9f74f0;
+}
+#location-button:hover {
+  cursor: pointer;
+}
+.city {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.paragraph-time {
+  margin-left: 30px;
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 32px;
+}
+.temperature {
+  position: relative;
+  left: 260px;
+  top: -120px;
+}
+.unit {
+  font-size: 15px;
+  position: relative;
+  top: -15px;
+}
+
+.card {
+  background-image: linear-gradient(
+    120deg,
+    hsl(271, 100%, 92%) 0%,
+    #a2ccf7 100%
+  );
+  border: none;
+  border-radius: 25px;
+  box-shadow: rgba(43, 70, 110, 0.4);
+  padding: 0 auto;
+  margin-bottom: 20px;
+}
+.card-body {
+  text-align: center;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+  padding: 0;
+}
+.fas {
+  color: #9a66fc;
+  font-size: 25px;
+}
+.card-temperature {
+  font-size: 20px;
+  text-align: Center;
+}
+.footer {
+  text-align: Center;
+  font-family: monospace;
+  font-size: 15px;
+  color: grey;
+  font-weight: normal;
+}
