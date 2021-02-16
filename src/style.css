@@ -119,3 +119,6 @@ h5,
   color: grey;
   font-weight: normal;
 }
+.gitHubLink {
+  text-decoration: none;
+}
