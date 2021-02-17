@@ -54,6 +54,7 @@ function handleSubmit(event) {
 }
 let searchForm = document.querySelector("#city-form");
 searchForm.addEventListener("click", handleSubmit);
+searchForm.addEventListener("submit", handleSubmit)
 
 function showPosition(position) {
   let latitude = position.coords.latitude;
