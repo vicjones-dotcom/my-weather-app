@@ -1,31 +1,26 @@
-let currentTime = new Date();
-console.log(new Date());
-let days = [
+function formatDate(timestamp) {
+  let date= new Date (timestamp);
+   let days=[
   "Sunday",
   "Monday",
   "Tueday",
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday"
-];
-let day = days[currentTime.getDay()];
-console.log(days[currentTime.getDay()]);
-let hours = currentTime.getHours();
-console.log(currentTime.getHours());
-if (hours < 10) {
-  hours = `0${hours}`;
+  "Saturday"];
+  let day=days[date.getDay()];
+  let hours= date.getHours();
+  if (hours <10) {
+    hours= `0${hours}`;
+  }
+  let minutes=date.getMinutes();
+  if (minutes <10) {
+    minutes=`0${minutes}`
+  }
+ 
+  return `${day} ${hours}: ${minutes}`
+
 }
-let minutes = currentTime.getMinutes();
-console.log(currentTime.getMinutes());
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-}
-
-let currentDayTime = document.querySelector("#current-date");
-currentDayTime.innerHTML = `${day} ${hours}: ${minutes}`;
-
-
 function displayWeather(response) {
   document.querySelector("#current-city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -37,7 +32,7 @@ function displayWeather(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
-    
+  document.querySelector("#current-date").innerHTML=`Last updated: ${formatDate(response.data.dt*1000)}`
 }
 
 function searchCity(city) {
