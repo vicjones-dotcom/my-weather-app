@@ -22,6 +22,8 @@ function formatDate(timestamp) {
 
 }
 function displayWeather(response) {
+  console.log(response.data);
+  console.log(response.data.main.feels_like)
   document.querySelector("#current-city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -30,6 +32,7 @@ function displayWeather(response) {
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document.querySelector("#feels-like").innerHTML=Math.round(response.data.main.feels_like);
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#current-date").innerHTML=`Last updated: ${formatDate(response.data.dt*1000)}`

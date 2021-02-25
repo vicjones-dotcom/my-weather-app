@@ -80,8 +80,9 @@ h5,
 }
 .temperature {
   position: relative;
-  left: 260px;
-  top: -120px;
+  left: 300px;
+  top: -100px;
+  font-size: 50px;
 }
 .unit {
   font-size: 15px;
