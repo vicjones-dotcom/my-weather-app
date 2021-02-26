@@ -78,11 +78,23 @@ h5,
 #weather-description {
   text-transform: capitalize;
 }
+.feels-like {
+  margin-left: 400px;
+  margin-top: -77px;
+  color: #084298;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+}
 .temperature {
-  position: relative;
-  left: 300px;
-  top: -100px;
+  margin-top: -170px;
+  margin-left: 330px;
   font-size: 50px;
+}
+#icon {
+  margin-left: -120px;
+  margin-top: -5px;
 }
 .unit {
   font-size: 15px;
