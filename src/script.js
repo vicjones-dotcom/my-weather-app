@@ -37,7 +37,9 @@ function displayWeather(response) {
   let iconElement=document.querySelector("#icon")
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png` );
   iconElement.setAttribute("alt", response.data.weather[0].description)
+  celsiusTemperature=response.data.main.temp
 }
+
 
 function searchCity(city) {
   let apiKey = "0a563fcaebc2d7ba86421e3b0a9eefb0";
@@ -72,5 +74,27 @@ function getPosition(event) {
 
 let currentLocationButton = document.querySelector("#location-button");
 currentLocationButton.addEventListener("click", getPosition);
+
+
+function displayFahrenheit (event){
+event.preventDefault();
+let fahrenheitTemperature=(celsiusTemperature*9)/5+32;
+let temperatureElement=document.querySelector("#temperature");
+celsiusLink.classList.remove("active");
+fahrenheitLink.classList.add("active");
+temperatureElement.innerHTML=Math.round(fahrenheitTemperature);
+}
+function displayCelsius(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement=document.querySelector("#temperature")
+  temperatureElement.innerHTML=Math.round(celsiusTemperature);
+}
+let celsiusTemperature=null;
+let fahrenheitLink=document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheit)
+let celsiusLink=document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsius);
 
 searchCity("Nicosia");

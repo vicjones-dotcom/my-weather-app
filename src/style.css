@@ -138,3 +138,8 @@ h5,
 .gitHubLink {
   text-decoration: none;
 }
+.temperature .active {
+  color: #084298;
+  cursor: default;
+  text-decoration: none;
+}
