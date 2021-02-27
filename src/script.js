@@ -56,7 +56,7 @@ function displayWeather(response) {
       <div class="card">
       <div class="card-body">
               <h5>${formatHours(forecast.dt*1000)}
-              <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="forecast-icon" height="60px" width="60px"/></h5>
+              <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="forecast-icon" height="65px" width="65px"/></h5>
               <h4 class="weather-forecast-temperature"><span id="forecast-celsius">${Math.round(forecast.main.temp_max)}°</span> | ${Math.round(forecast.main.temp_min)}°
               </h4>
          </div>  
