@@ -19,6 +19,9 @@ body {
 h5 {
   font-size: 20px;
 }
+h1 {
+  color: #42445c;
+}
 h4,
 h5,
 .btn-search,
@@ -50,7 +53,6 @@ a {
 }
 .fa-search {
   font-size: 27px;
-  color: #9f74f0;
   margin-left: 10px;
 }
 .fa-search:hover {
@@ -59,7 +61,6 @@ a {
 #location-button {
   margin-left: 10px;
   font-size: 27px;
-  color: #9f74f0;
 }
 #location-button:hover {
   cursor: pointer;
@@ -89,7 +90,10 @@ a {
 .temperature {
   margin-top: -170px;
   margin-left: 330px;
-  font-size: 50px;
+  font-size: 40px;
+}
+.fas {
+  color: #42445c;
 }
 #icon {
   margin-left: -120px;
@@ -99,6 +103,10 @@ a {
   font-size: 15px;
   position: relative;
   top: -15px;
+}
+#forecast-celsius {
+  color: black;
+  font-weight: bold;
 }
 
 .card {
@@ -141,7 +149,7 @@ img.forecast-icon {
   text-align: Center;
   font-family: monospace;
   font-size: 15px;
-  color: #084298;
+  color: #42445c;
   font-weight: normal;
 }
 .gitHubLink {

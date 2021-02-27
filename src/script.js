@@ -39,7 +39,7 @@ function displayWeather(response) {
   document.querySelector("#feels-like").innerHTML=Math.round(response.data.main.feels_like);
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
-  document.querySelector("#current-date").innerHTML=`Last updated: ${formatDate(response.data.dt*1000)}`
+  document.querySelector("#last-updated").innerHTML=`Last updated: ${formatDate(response.data.dt*1000)}`
   let iconElement=document.querySelector("#icon")
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png` );
   iconElement.setAttribute("alt", response.data.weather[0].description)
@@ -55,8 +55,8 @@ function displayWeather(response) {
       forecastElement.innerHTML+=`<div class="col-sm-3">
       <div class="card">
       <div class="card-body">
-              <h5>${formatHours(forecast.dt*1000)}</h5>
-              <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="forecast-icon" height="50px" width="50px"/>
+              <h5>${formatHours(forecast.dt*1000)}
+              <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="forecast-icon" height="60px" width="60px"/></h5>
               <h4 class="weather-forecast-temperature"><span id="forecast-celsius">${Math.round(forecast.main.temp_max)}°</span> | ${Math.round(forecast.main.temp_min)}°
               </h4>
          </div>  
