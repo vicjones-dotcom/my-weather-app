@@ -53,7 +53,7 @@ a {
 }
 .fa-search {
   font-size: 27px;
-  margin-left: 0;
+  margin-left: 5px;
 }
 .fa-search:hover {
   cursor: pointer;
