@@ -9,7 +9,7 @@ ul {
   position: relative;
   left: -5px;
   font-size: 15px;
-  margin-top: -2px;
+  margin-top: -25px;
 }
 body {
   color: #084298;
@@ -94,14 +94,14 @@ a {
 }
 .temperature {
   margin-top: -190px;
-  margin-left: 220px;
+  margin-left: 240px;
   font-size: 35px;
 }
 .fas {
   color: #42445c;
 }
 #icon {
-  margin-left: -235px;
+  margin-left: -225px;
   margin-top: -15px;
 }
 .unit {
