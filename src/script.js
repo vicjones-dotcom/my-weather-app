@@ -103,7 +103,7 @@ function getPosition(event) {
 
 let currentLocationButton = document.querySelector("#location-button");
 currentLocationButton.addEventListener("click", getPosition);
-currentLocationButton.addEventListener("touchstart", getPosition );
+currentLocationButton.addEventListener("touchend", getPosition );
 
 function displayFahrenheit (event){
 event.preventDefault();
