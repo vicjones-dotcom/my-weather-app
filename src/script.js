@@ -50,16 +50,17 @@ function displayWeather(response) {
     forecastElement.innerHTML=null;
     let forecast=null;
 
-    for(let index = 0; index < 5; index++){
+    for(let index = 0; index < 6; index++){
       forecast=response.data.list[index];
-      forecastElement.innerHTML+=`<div class="col-2">
-  
+      forecastElement.innerHTML+=`<div class="col-4">
+      <div class="card">
+      <div class="card-body">
               <h5>${formatHours(forecast.dt*1000)}
               <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="forecast-icon" height="65px" width="65px"/></h5>
               <h4 class="weather-forecast-temperature"><span id="forecast-celsius">${Math.round(forecast.main.temp_max)}°</span> | ${Math.round(forecast.main.temp_min)}°
               </h4>
          </div>  
-          
+         </div>   
         </div>`;
     }
   }
