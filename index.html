@@ -25,6 +25,7 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app">
       <header>
         <form id="city-form">
           <input
@@ -48,18 +49,27 @@
         </p>
       </section>
       <br/>
+      <div class="row">
+      <div class="col-6 current-date-details">
       <ul>
         <li class="feels-like">Feels like: <span id="feels-like"></span>°C</li>
         <li >Humidity: <span id="humidity"></span> %</li>
         <li >Wind: <span id="wind-speed"></span> km/h</li>
       </ul>
+      </div>
+    </div>
+<div class="row">
+  <div class="col-6 temperature-icon">
       <div class="clearfix">
       <img src="" alt="clear" id="icon" class="float-left" />
-      <h1 class="temperature float-left"><span id="temperature"></span> <span class="unit"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">F</a> </span></h1>
+      <h1 class="temperature float-left"><span id="temperature"></span><span class="unit"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">F</a> </span> </h1>
     </div>
+    </div>
+  </div>
        <div class="row weather-forecast" id="forecast">
         </div>
         </div>
+      </div>
     <p class="footer"><a href="https://github.com/vicjones-dotcom/my-weather-app" target="_blank" class="gitHubLink"> Open-source code</a> by Victoria Jones🌈</p>
      <script src =src/script.js></script>
   </body>

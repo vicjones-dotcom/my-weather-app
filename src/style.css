@@ -9,6 +9,7 @@ ul {
   position: relative;
   left: -5px;
   font-size: 15px;
+  margin-top: 0;
 }
 body {
   color: #084298;
@@ -39,17 +40,21 @@ a {
   font-size: 25px;
 }
 .container {
-  margin: 20px auto;
-  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+.weather-app {
+  margin: 10px auto;
+  max-width: 500px;
   margin-bottom: 5px;
-  padding: 15px auto;
+  padding: 10px;
   border-radius: 10px;
   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 .city-text {
   margin-left: 30px;
   font-size: 15px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .fa-search {
   font-size: 22px;
@@ -66,17 +71,20 @@ a {
   cursor: pointer;
 }
 .city {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 30px;
 }
 .paragraph-time {
   margin-left: 30px;
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 15px;
-  line-height: 32px;
+  line-height: 25px;
 }
 #weather-description {
   text-transform: capitalize;
+}
+.temperature-icon {
+  margin-top: 0;
 }
 .feels-like {
   margin-left: 0;
@@ -87,7 +95,7 @@ a {
   font-size: 15px;
 }
 .temperature {
-  margin-top: -170px;
+  margin-top: -190px;
   margin-left: 293px;
   font-size: 35px;
 }
@@ -95,46 +103,44 @@ a {
   color: #42445c;
 }
 #icon {
-  margin-left: -155px;
-  margin-top: -35px;
+  margin-left: -175px;
+  margin-top: -5px;
 }
 .unit {
   font-size: 10px;
-  position: relative;
-  top: -22px;
-  left: -9px;
 }
 #forecast-celsius {
   color: black;
   font-weight: bold;
 }
 
-.col-sm-2 {
+.col-2 {
   border: none;
+  background-image: linear-gradient(
+    120deg,
+    hsl(271, 100%, 92%) 0%,
+    #a2ccf7 100%
+  );
+
   border-radius: 25px;
   box-shadow: rgba(43, 70, 110, 0.4);
-  margin-bottom: 20px;
+  margin: 5px;
   text-align: center;
-  margin-left: 0;
-  margin-right: 0;
   padding: 0;
 }
-.card-body {
-  padding-top: 0;
-  padding-bottom: 0;
+.weather-forecast {
+  margin: 0;
+  padding: 10px;
 }
-.col-sm-4:hover {
+.col-2:hover {
   opacity: 0.4;
 }
 h4,
 h5 {
   font-size: 15px;
-}
-h4 {
-  padding-bottom: 0;
-}
-h5 {
-  padding-top: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 img.forecast-icon {
