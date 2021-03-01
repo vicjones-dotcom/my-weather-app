@@ -58,13 +58,13 @@ a {
 }
 .fa-search {
   font-size: 22px;
-  margin-left: 5px;
+  margin-left: 0;
 }
 .fa-search:hover {
   cursor: pointer;
 }
 #location-button {
-  margin-left: 5px;
+  margin-left: 0;
   font-size: 22px;
 }
 #location-button:hover {
