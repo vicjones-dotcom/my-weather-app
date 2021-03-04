@@ -12,7 +12,7 @@ ul {
   margin-top: -25px;
 }
 body {
-  color: #084298;
+  color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
@@ -21,7 +21,7 @@ h5 {
   font-size: 20px;
 }
 h1 {
-  color: #42445c;
+  color: #fff;
 }
 h4,
 h5,
@@ -49,7 +49,7 @@ a {
   margin-bottom: 5px;
   padding: 10px;
   border-radius: 10px;
-  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
 .city-text {
   margin-left: 30px;
@@ -87,7 +87,7 @@ a {
   margin-top: 0;
 }
 .feels-like {
-  color: #084298;
+  color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 15px;
@@ -98,7 +98,7 @@ a {
   font-size: 35px;
 }
 .fas {
-  color: #42445c;
+  color: #fff;
 }
 #icon {
   margin-left: -225px;
@@ -111,17 +111,13 @@ a {
   left: -2px;
 }
 #forecast-celsius {
-  color: black;
+  color: #fff;
   font-weight: bold;
 }
 
 .card {
   border: none;
-  background-image: linear-gradient(
-    120deg,
-    hsl(271, 100%, 92%) 0%,
-    #a2ccf7 100%
-  );
+  background: linear-gradient(to right, rgb(173, 103, 145), rgb(122, 36, 168));
 
   border-radius: 25px;
   box-shadow: rgba(43, 70, 110, 0.4);
@@ -142,7 +138,7 @@ h5 {
   padding-top: 0;
 }
 .card-body:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 h4,
 h5 {
@@ -169,7 +165,7 @@ img.forecast-icon {
   text-decoration: none;
 }
 .temperature .active {
-  color: #084298;
+  color: #fff;
   cursor: default;
   text-decoration: none;
 }
